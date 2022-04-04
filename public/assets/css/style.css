@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #986D8E;
 }
 
 a {
@@ -118,11 +118,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: #D9D7F1;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: #D5BFBF;
 }
 
 #header .logo {
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #fff;
+  color: #11324D;
   transition: 0.3s;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #28aec0;
+  color: #B97A95;
 }
 
 .nav-menu .drop-down ul {
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   padding: 0;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(161, 127, 127, 0.25);
   transition: 0.3s;
 }
 
@@ -397,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/sp3.jpg") top center;
+  background: url("../img/2.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 span {
-  color:  #0ef0e4;
+  color:  #D18CE0;
 }
 
 #hero h2 {
@@ -521,8 +521,6 @@ section {
   content: "";
   width: 120px;
   height: 1px;
-  display: inline-block;
-  background: #f00eac;
   margin: 4px 10px;
 }
 
@@ -1156,7 +1154,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #151515;
+  background: #7C99AC;
   border-bottom: 1px solid #222222;
   padding: 60px 0 30px 0;
 }
@@ -1576,11 +1574,10 @@ cursor: pointer;
   height: 100%;
 }
 .catego-pag .container-project{
-   padding: 100px 0;
-  width: 90%;
-  max-width: 90%;
+   padding: 40px 0;
+  width: 50%;
+  max-width: 50%;
   margin:auto;
-  overflow:hidden ;
 }
 .catego-pag .container-project .project-title{
   border:2px solid #fff;
