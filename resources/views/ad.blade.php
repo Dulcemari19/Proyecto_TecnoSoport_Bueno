@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!------Vista mostrar3----->
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -48,80 +49,106 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          
-              <li ><a href="{{ route('mostrar') }}">Clientes</a></li>
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos |</a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes </a>
+          </li>
+          <li><a>|</a>
+          <li><a href="{{ route('logoutad') }}"> <img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
-              <li ><a href="{{ route('mostrar3') }}">Productos | Herramientas | Servicios </a></li>
-
-              <li><a href="{{ route('logoutad') }}">  <img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
-          
         </ul>
       </nav><!-- .nav-menu -->
-    </header><!-- End Header -->
+  </header><!-- End Header -->
 
- 
+
   <!-- Testimonios -->
   <section class="testimonios">
     <div class="testimonios-title">
-     <h2>Administradores</h2>
+      <h2>Administradores</h2>
     </div>
     <br>
     <center><button type="button"><a href="{{ route('agregar2') }}"><img src="{{ asset('assets/img/agregar-usuario.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td></button></center>
-<br>
+    <br>
     <table class="table">
-        <thead>
-          <tr>
-            <th>
-              <h4> ID</h4>
-            </th>
-            <th scope="col">
-              <h4>Nombre</h4>
-            </th>
-            <th scope="col">
-              <h4>Apellidos</h4>
-            </th>
-            <th scope="col">
-              <h4>Direccion</h4>
-            </th>
-            <th scope="col">
-              <h4>Telefono</h4>
-            </th>
-            <th scope="col">
-              <h4>Email</h4>
-            </th>
-            <th scope="col">
-              <h4>Contraseña</h4>
-            </th>
-            <th scope="col">
-              <h4>Editar</h4>
-            </th>
-            <th scope="col">
-              <h4>Borrar</h4></th>
-          </tr>
-	
-
-<tr>
-@foreach($admi as $ad)
-<td><h5>{{ $ad->id_admi }}<h5></td>
-<td><h5>{{ $ad->nombre }}<h5></td>
-<td><h5>{{ $ad->apellidos }}<h5></td>
-<td><h5>{{ $ad->direc }}<h5></td>
-<td><h5>{{ $ad->tel }}<h5></td>
-<td><h5>{{ $ad->email }}<h5></td>
-<td><h5>{{ $ad->pass }}<h5></td>
-<td style = "text-align:center;"><a href="{{ route('editar2', ['id' => $ad->id_admi]) }}"><img src="{{ asset('assets/img/boton-editar.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td>
-<td style = "text-align:center;" ><form action ="{{ route('borrar2', ['id' => $ad->id_admi]) }}" method="POST" name="borrar">
-    {{csrf_field()}}
-    {{method_field('DELETE')}}
-    <input type="submit" value="Borrar">
-    </form></td>
-	</tr>
-@endforeach
-	</table></center>
+        <tr>
+          <th>
+            <h4> ID</h4>
+          </th>
+          <th scope="col">
+            <h4>Nombre</h4>
+          </th>
+          <th scope="col">
+            <h4>Apellidos</h4>
+          </th>
+          <th scope="col">
+            <h4>Direccion</h4>
+          </th>
+          <th scope="col">
+            <h4>Telefono</h4>
+          </th>
+          <th scope="col">
+            <h4>Email</h4>
+          </th>
+          <th scope="col">
+            <h4>Contraseña</h4>
+          </th>
+          <th scope="col">
+            <h4>Editar</h4>
+          </th>
+          <th scope="col">
+            <h4>Borrar</h4>
+          </th>
+        </tr>
 
 
-	
-    
+        <tr>
+          @foreach($admi as $ad)
+          <td>
+            <h5>{{ $ad->id_admi }}
+              <h5>
+          </td>
+          <td>
+            <h5>{{ $ad->nombre }}
+              <h5>
+          </td>
+          <td>
+            <h5>{{ $ad->apellidos }}
+              <h5>
+          </td>
+          <td>
+            <h5>{{ $ad->direc }}
+              <h5>
+          </td>
+          <td>
+            <h5>{{ $ad->tel }}
+              <h5>
+          </td>
+          <td>
+            <h5>{{ $ad->email }}
+              <h5>
+          </td>
+          <td>
+            <h5>{{ $ad->pass }}
+              <h5>
+          </td>
+          <td style="text-align:center;"><a href="{{ route('editar2', ['id' => $ad->id_admi]) }}"><img src="{{ asset('assets/img/boton-editar.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td>
+          <td style="text-align:center;">
+            <form action="{{ route('borrar2', ['id' => $ad->id_admi]) }}" method="POST" name="borrar">
+              {{csrf_field()}}
+              {{method_field('DELETE')}}
+              <input type="submit" value="Borrar">
+            </form>
+          </td>
+        </tr>
+        @endforeach
+    </table>
+    </center>
+
+
+
+
 </body>
 
 </html>

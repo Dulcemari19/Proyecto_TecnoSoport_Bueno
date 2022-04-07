@@ -48,53 +48,79 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-        <nav class="nav-menu d-none d-lg-block">
-        <ul>
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li><a href="{{ route('admi') }}">inicio | </a></li>
+              <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+              <li><a href="{{ route('mostrar3') }}">Productos | </a></li>
+              <li><a href="{{ route('agregar3') }}">Registrar producto | </a></li>
+              <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+              <li><a href="{{ route('mostrar') }}">Clientes </a>
+              </li>
+              <li><a>|</a>
+              <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
-          <li><a href="{{ route('mostrar2') }}">Administradores</a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+  </header><!-- End Header -->
 
-          <li><a href="{{ route('mostrar3') }}">Productos | Herramientas | Servicios </a></li>
 
-          <li><a>|</a>
-          <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-    </header><!-- End Header -->
-
- 
   <!-- Testimonios -->
   <section class="testimonios">
     <div class="testimonios-title">
-     <h2>Agregar Administrador <img src="{{ asset('assets/img/agregar-usuario.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></h2>
+      <h2>Agregar Administrador <img src="{{ asset('assets/img/agregar-usuario.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></h2>
     </div>
     <br>
-     <br>
-     
-<center>
+    <br>
 
-<form name="nuevo" action="{{ route('guardar3') }}" method="POST">
-              {{ csrf_field() }}
-              
-              @if(count($errors) > 0)
-                  @foreach($errors->all() as $error)
-                          {{ $errors }}
-                  @endforeach
-              @endif
+    <center>
 
-        <input type='text' name='nombre' placeholder="Nombre" value="{{ old ('nombre') }}">
-        <input type='text' name='apellidos' placeholder="Apellidos" value="{{ old ('apellidos') }}">
-        <input type='text' name='direc' placeholder="Dirrección" value="{{ old ('direc') }}">
-        <input type='text' name='tel' placeholder="Teléfono" value="{{ old ('tel') }}">
-        <input type='text' name='email' placeholder="Ingresa tu correo" value="{{ old ('email') }}">
-        <input type='text' name='pass' placeholder="Ingresa tu contraseña" value="{{ old ('pass') }}">
+      <form name="nuevo" action="{{ route('guardar3') }}" method="POST">
+      <table border="1" table class="table table-striped table-hover">
+        <center>
+          <tr>
+            <th scope="col">
+              <center>Nombre
+            </th>
+        </center>
+        <th scope="col">
+          <center>Apellidos</center>
+        </th>
+        <th scope="col">
+          <center>Dirrección</center>
+        </th>
+        <th scope="col">
+          <center>Telefono</center>
+        </th>
+        <th scope="col">
+          <center>Correo Electronico</center>
+        </th>
+        <th scope="col">
+          <center>Contraseña</center>
+        </th>
+        </tr>
+        </center>
+        {{ csrf_field() }}
+
+        @if(count($errors) > 0)
+        @foreach($errors->all() as $error)
+        {{ $errors }}
+        @endforeach
+        @endif
+
+        <th><input type='text' name='nombre' placeholder="Nombre" value="{{ old ('nombre') }}"></th>
+        <th><input type='text' name='apellidos' placeholder="Apellidos" value="{{ old ('apellidos') }}"></th>
+        <th><input type='text' name='direc' placeholder="Dirrección" value="{{ old ('direc') }}"></th>
+        <th><input type='text' name='tel' placeholder="Teléfono" value="{{ old ('tel') }}"></th>
+        <th><input type='text' name='email' placeholder="Ingresa tu correo" value="{{ old ('email') }}"></th>
+        <th><input type='text' name='pass' placeholder="Ingresa tu contraseña" value="{{ old ('pass') }}"></th>
         <br>
         <br>
         <center><button type='submit' value="Agregar"><img src="{{ asset('assets/img/boton-agregar.png') }}" alt="" width="30" height="30" class="bi bi-box-arrow-left"></a>Agregar Administrador</td></button>
         </center>
-        </form>
-  
-</center>
+      </form>
+
+    </center>
 
 
 </body>

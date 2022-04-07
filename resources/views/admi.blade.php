@@ -48,16 +48,12 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="{{ route('categorias') }}">Categorias</a></li>
-          <li><a href="{{ route('mostrar') }}">Clientes</a>
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos |</a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes </a>
           </li>
-          <li><a href="{{ route('mostrar2') }}">Administradores</a>
-          </li>
-          <li><a href="{{ route('mostrar3') }}">Productos | Herramientas | Servicios </a>
-          </li>
-          <li><a href="{{ route('pdf') }}">Productos | Herramientas | Servicios </a>
-          </li>
-
           <li><a>|</a>
           <li><a href="{{ route('logoutad') }}"> <img src="assets/img/c1.png" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></svg></a></li>
 

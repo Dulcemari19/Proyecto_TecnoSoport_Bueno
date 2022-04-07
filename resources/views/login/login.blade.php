@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Inicio de sesión</title>
+    <title>Inicia sesión</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/img-7.jpg') }}" rel="icon">//cambio de imagen para icono vista hasta arriba
     <link rel="stylesheet" href="{{ asset('inicio/assets/css/est.css') }}">
   </head>
   <body>
 
   <div class="contenedor">
     <div class="formulario">
-    <p algin="right"><a href="{{ route('index') }}"><img src="assets/img/usuario.png" alt="" width="70" height="70"></a></p>
+    <p algin="right"><a href="{{ route('loginad') }}"><img src="assets/img/usuario.png" alt="" width="75" height="75"></a></p>
 
-    <h1>Inicio de sesión</h1>
+    <h1>Inicia sesión</h1>
 
   <form name="nuevo" action="{{ route('validar') }}" method="POST">
         {{ csrf_field() }}
@@ -27,7 +27,8 @@
     </div>
     
     <div class="button">
-  <p>¿No tienes una cuenta? <a class="link"  href="{{ route('nuevo') }}">Regístrate </a></p>
+    <p>Al regístrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>¿No tienes una cuenta? <a class="link"  href="{{ route('nuevo') }}">Regístrate </a></p>
 
   </body>
 </html>

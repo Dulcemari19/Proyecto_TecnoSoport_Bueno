@@ -12,10 +12,8 @@
   <div class="formulario">
    
    <div class="contenedor">
-   <p algin="right"><a href="{{ route('index') }}"><img src="assets/img/usuario.png" alt="" width="70" height="70"></a></p>
+   <p algin="right"><a href="{{ route('index') }}"><img src="assets/img/usuario.png" alt="" width="75" height="75"></a></p>
     <h1>Regístrate</h1>
-
-
         <form name="nuevo" action="{{ route('guardar') }}" method="POST">
               {{ csrf_field() }}
               

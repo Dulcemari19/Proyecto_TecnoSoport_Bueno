@@ -48,11 +48,12 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-
-          <li><a href="{{ route('mostrar2') }}">Administradores</a></li>
-
-          <li><a href="{{ route('mostrar3') }}">Productos | Herramientas | Servicios </a></li>
-
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos </a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes |</a>
+          </li>
           <li><a>|</a>
           <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
@@ -123,10 +124,10 @@
             <td style="text-align:center;"><a href="{{ route('editar', ['id' => $usu->id_usuario]) }}"><img src="{{ asset('assets/img/boton-editar.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td>
             <td style="text-align:center;">
               <a href="{{ route('borrar', ['id' => $usu->id_usuario]) }}" method="POST" name="borrar">
-              <form action ="{{ asset('assets/img/eliminar.png') }}" alt="" width="45" height="45" class="bi bi-box-arrow-left">
-                {{csrf_field()}}
-                {{method_field('DELETE')}}
-                <input type="submit" value="Borrar">
+                <form action="{{ asset('assets/img/eliminar.png') }}" alt="" width="45" height="45" class="bi bi-box-arrow-left">
+                  {{csrf_field()}}
+                  {{method_field('DELETE')}}
+                  <input type="submit" value="Borrar">
             </td>
           </tr>
           @endforeach

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TecnoSoportSDA</title>
+  <title>Papelitos</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><img src="assets/img/logo.png" alt="" width="45" height="45"></h1>
+      <h1 class="logo"><img src="assets/img/logo.png" alt="" width="48" height="48"></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -50,7 +50,7 @@
         <ul>
           
           <li><a href="{{ route('login') }}">Iniciar sesión </a></li>
-          <li><a href="{{ route('loginad') }}"> | Administrador</a></li>
+          <li><a href="{{ route('loginad') }}"> <img src="assets/img/pencil2.png" alt="" width="40" height="40"> </a></li>
  
           
 
@@ -64,13 +64,11 @@
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
-          <h1><span>TecnoSoportSDA</span></h1>
+          <h1><span>PAPELITOS <img src="assets/img/paper.png"  width="55" height="55" ></h1>
           <br>
+          <h2 style="text-align:center"><FONT SIZE=50><span>"</span>Tus elementos esenciales del día a día.<span>"</span></FONT></h2>
           <br>
-          <h1><span>"</span>El servicio marca la diferiencia.<span>"</span></h1>
-          <br>
-          <br>
-          <h2>Servicos a Soporte Tecnico</h2>
+          <h3><FONT SIZE=6> Papelitos...Pide lo que quieras <img src="assets/img/pencil1.png"  width="55" height="55" ></FONT></h3>
         </div>
       </div>
 
@@ -85,81 +83,35 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Soporte tecnico</h2>
-          <p>Servicios</p>
+          <h2>Papeleria Papelitos</h2>
+          <hr size="50px" style="width: 20%" style="border-color:purplue;">
+          <p>Marcas</p>
         </div>
 
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
         <div class="owl-carousel clients-carousel">
-          <h4>Mantenimiento Preventivo</h4>
-          <img src="assets/img/servicios/man1.png" alt="">
-          <h4>Mantenimiento Correctivo</h4>
-          <img src="assets/img/servicios/man2.jpg" alt="">
-          <h4>Asistencia telefonica</h4>
-          <img src="assets/img/servicios/a1.png" alt="">
-          <h4>Instalacion de programas</h4>
-          <img src="assets/img/servicios/ins1.jpg" alt="">
-          <h4>Acceso remoto</h4>
-          <img src="assets/img/servicios/ace1.webp" alt="">
-          <h4>Recuperacion de archivos</h4>
-          <img src="assets/img/servicios/re1.jpg" alt="">
-          <h4>Productos</h4>
-          <img src="assets/img/servicios/pro1.jpg" alt="">
-          <h4>Herramientas</h4>
-          <img src="assets/img/servicios/he1.jpg" alt="">
+          <img src="assets/img/marcas/1.png" alt="">
+          <img src="assets/img/marcas/2.png" alt="">
+          <img src="assets/img/marcas/3.png" alt="">
+          <img src="assets/img/marcas/4.png" alt="">
+          <img src="assets/img/marcas/5.jpg" alt="">
+          <img src="assets/img/marcas/6.png" alt="">
+          <img src="assets/img/marcas/7.png" alt="">
+          <img src="assets/img/marcas/8.jpg" alt="">
+          <img src="assets/img/marcas/9.png" alt="">
         </div>
 
       </div>
     </section><!-- End Clients Section -->
 
-       <!-- ======= Testimonials Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Creadores</h2>
-          <p>"TecnoSoportSDA"</p>
-        </div>
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="owl-carousel testimonials-carousel">
-
-          
-        <div class="testimonial-item">
-            <img src="assets/img/testimonials/sa1.jpg" class="testimonial-img" alt="">
-            <h3>Saira</h3>
-            <h4>TecnoSoportSDA</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              La calidad de su servicio, depende de la calidad de su personal.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/du1.jpeg" class="testimonial-img" alt="">
-            <h3>Dulce Maria</h3>
-            <h4>TecnoSoportSDA</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              El servicio al cliente no es un departamento, es una actitud.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-   
+  
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>TecnoSoportSDA</h2>
+          <h2>Papelitos</h2>
           <p>¡Encuentranos!</p>
         </div>
 
@@ -180,13 +132,13 @@
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Correo:</h4>
-                <p>TecnoSoportSDA@gmail.com</p>
+                <p>Papelitos@gmail.com</p>
               </div>
       
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Teléfono:</h4>
-                <p>+52 72 76 62 85 06</p>
+                <p>+52 72 75 62 89 06</p>
               </div>
       
             </div>
@@ -235,11 +187,11 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>TecnoSoportSDA<span>.</span></h3>
+              <h3>Papelitos<span>.</span></h3>
               <p>
               Av. Miguel Hidalgo Poniente N° 9 Col. La Mota Lerma<br><br>
-                <strong>Teléfono:</strong> +52 72 76 62 85 06<br>
-                <strong>Correo:</strong>  TecnoSoportSDA@gmail.com<br>
+                <strong>Teléfono:</strong> +52 72 75 62 89 06<br>
+                <strong>Correo:</strong>  Papelitos@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="https://www.facebook.com/Tecnosoportsda-101451932004112" class="facebook"><img src="assets/img/facebook.png" class="img-fluid" width="40px" alt="facebook TecnosoportSDA"></a>
@@ -284,14 +236,12 @@
 
     <div class="container">
       <div class="copyright">
-        © Saira Martinez Diaz <strong><span>,</span></strong> @ Dulce Maria Sevilla Ortiz | Todos los derechos reservados.TecnoSoportSDA
+       Todos los derechos reservados Papeleria Papelitos
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        <h1>TecnoSoportSDA</h1>
+      <h1>PAPELITOS</h1>
+        <br>
+           <img src="assets/img/logo.png" alt="" width="150" height="150"></h1>
       </div>
     </div>
   </footer><!-- End Footer -->

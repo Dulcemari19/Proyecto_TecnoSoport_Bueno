@@ -47,75 +47,74 @@
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-
-          <li><a href="{{ route('mostrar2') }}">Administradores</a></li>
-
-          <li><a href="{{ route('mostrar3') }}">Productos | Herramientas | Servicios </a></li>
-
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('categorias') }}">Categorias |</a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos | </a></li>
+          <li><a href="{{ route('agregar3') }}">Registrar producto | </a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes </a>
           <li><a>|</a>
           <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
         </ul>
-           </nav><!-- .nav-menu -->
-    </header><!-- End Header -->
+      </nav><!-- .nav-menu -->
+  </header><!-- End Header -->
 
- 
+
   <!-- Testimonios -->
   <section class="testimonios">
     <div class="testimonios-title">
-     <h2>Editar</h2>
+      <h2>Editar</h2>
     </div>
     <br>
-     <br>
+    <br>
 
-<center>
-    <form name="nuevo" action="{{ route('salvar', ['id' => $usu->id_usuario]) }}" method="POST">
+    <center>
+      <form name="nuevo" action="{{ route('salvar', ['id' => $usu->id_usuario]) }}" method="POST">
         {{ csrf_field() }}
         {{ method_field('PUT') }}
 
         <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">
-              <h4>Nombre</h4>
-            </th>
-            <th scope="col">
-              <h4>Apellidos</h4>
-            </th>
-            <th scope="col">
-              <h4>Direccion</h4>
-            </th>
-            <th scope="col">
-              <h4>Telefono</h4>
-            </th>
-            <th scope="col">
-              <h4>Email</h4>
-            </th>
-            <th scope="col">
-              <h4>Contraseña</h4>
-            </th>
+          <thead>
             <tr>
-            </td>
-            <td><input type='text' name='nombre' placeholder="Nombre" value="{{ $usu->nombre }}"></h5>
-            </td>
-            <td> <input type='text' name='apellidos' placeholder="Apellidos" value="{{ $usu->apellidos }}"></h5>
-            </td>
-            <td><input type='text' name='direc' placeholder="Dirrección" value="{{ $usu->direc }}"></h5>
-            </td>
-            <td><input type='text' name='tel' placeholder="Teléfono" value="{{ $usu->tel }}"></h5>
-            </td>
-            <td><input type='text' name='email' placeholder="Ingresa tu correo" value="{{ $usu->email }}"></h5>
-            </td>
-            <td><input type='text' name='pass' placeholder="Ingresa tu contraseña" value="{{ $usu->pass }}"></h5>
-            </td>
-            <input type='submit' value="Guardar"><br>
-    </form>
-</center>
+              <th scope="col">
+                <h4>Nombre</h4>
+              </th>
+              <th scope="col">
+                <h4>Apellidos</h4>
+              </th>
+              <th scope="col">
+                <h4>Direccion</h4>
+              </th>
+              <th scope="col">
+                <h4>Telefono</h4>
+              </th>
+              <th scope="col">
+                <h4>Email</h4>
+              </th>
+              <th scope="col">
+                <h4>Contraseña</h4>
+              </th>
+            <tr>
+              </td>
+              <td><input type='text' name='nombre' placeholder="Nombre" value="{{ $usu->nombre }}"></h5>
+              </td>
+              <td> <input type='text' name='apellidos' placeholder="Apellidos" value="{{ $usu->apellidos }}"></h5>
+              </td>
+              <td><input type='text' name='direc' placeholder="Dirrección" value="{{ $usu->direc }}"></h5>
+              </td>
+              <td><input type='text' name='tel' placeholder="Teléfono" value="{{ $usu->tel }}"></h5>
+              </td>
+              <td><input type='text' name='email' placeholder="Ingresa tu correo" value="{{ $usu->email }}"></h5>
+              </td>
+              <td><input type='text' name='pass' placeholder="Ingresa tu contraseña" value="{{ $usu->pass }}"></h5>
+              </td>
+              <input type='submit' value="Guardar"><br>
+      </form>
+    </center>
 
 
 </body>
 
 </html>
-
-      
-      

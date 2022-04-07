@@ -47,7 +47,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><img src="{{ asset ('assets/img/logo.png')}}" alt="" width="40" height="40" style="background-color:white;"><a>TecnoSoportSDA</a></h1>
+      <h1 class="logo"><img src="{{ asset ('assets/img/logo.png')}}" alt="" width="40" height="40" style="background-color:white;"><a>Papelitos</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -55,7 +55,7 @@
         <ul>
 
 
-        <li><a href="{{ route('cero') }}">Productos | Herramientas | Servicios</a></li>
+        <li><a href="{{ route('cero') }}">Productos | </a></li>
           <li><a>Bienvenido</a>
           <li><a>|</a>
           <li><a href="{{ route('logout') }}"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
 
   <section class="testimonios">
     <div class="testimonios-title">
-      <h1><a style="background-color:#9ede73 ;">Nombre Producto:{{ $juguete->nombre }} </a></h1>
+      <h1><a style="background-color:#9ede73 ;">Nombre Producto: </a></h1>
     </div>
     <br>
     <br>
@@ -97,30 +97,17 @@
               <h3>Tipo</h3>
             </th>
             <th scope="col">
-              <h3>${{ $juguete->pre }} MXN | Marca: {{ $juguete->marca }}</h3>
+             
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row"><img src="{{ asset('img/'.$juguete->img) }}" alt="{{$juguete->img}}" width="150" height="150"></th>
+           
+            
             <td>
-              <h3>{{ $juguete->des }} </h3>
-            </td>
-            <td>
-              <h3>{{ $juguete->categoria }}</h3>
-            </td>
-            <td>
-              <h3>{{ $juguete->tipo }}</h3>
-            </td>
-            <td>
-                <a><img src="{{ asset('assets/img/co1.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left">
-                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="DLBGEKWC42R64">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-                  </form>
+                <a href="{{route('paypal')}}"><img src="{{ asset('assets/img/co1.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left">
+                 
                 </a>
             </td>
           </tr>

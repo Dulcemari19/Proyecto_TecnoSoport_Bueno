@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TecnosoportSDA | Inicio</title>
+  <title>Papelitos| Inicio</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -48,26 +48,34 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-        <li><a href="{{ route('categorias') }}">Categorias</a></li>
-        <li><a href="{{ route('cono') }}">¿Quienes somos?</a></li>
-        <li><a href="{{ route('cero') }}">Productos | Herramientas | Servicios</a></li>
+          <li><a href="{{ route('categorias') }}">Categorias |</a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('cero') }}">Productos |</a></li>
 
-              <li><a> Bienvenido(a)</a>
+          <li><a> Bienvenido(a)</a>
           <li><a href="{{ route('logout') }}"> <img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
-          
+
         </ul>
       </nav><!-- .nav-menu -->
-    </header><!-- End Header -->
+  </header><!-- End Header -->
 
-   
-        
-   <!-- ======= Hero Section ======= -->
-   <section id="hero" class="d-flex align-items-center justify-content-center">
-   
-        <div class="col-xl-6 col-lg-8">
-    <center><h1><span>"</span>TecnoSoportSDA<span>"</span></h1></center>
-    <br>
-    <br>
-    <center><h2>Bienvenido aqui podras encontrar los mejores servicios para tus computadores.</h2></center>
-      
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+
+    <div class="col-xl-6 col-lg-8">
+      <center>
+        <h1><span>"</span>Papelitos<img src="assets/img/paper.png"  width="55" height="55" ><span>"</span></h1>
+      </center>
+      <br>
+      <h2 style="text-align:center">
+        <FONT SIZE=50><span>"</span>Tus elementos esenciales del día a día.<span>"</span></FONT>
+      </h2>
+      <br>
+      <center>
+        <h3>
+          <FONT SIZE=6> Papelitos...Pide lo que quieras <img src="assets/img/pencil1.png" width="55" height="55"></FONT>
+        </h3>
+      </center>

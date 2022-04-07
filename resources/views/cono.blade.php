@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TecnosoportSDA | Inicio</title>
+  <title>Papelitos | Inicio</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -48,9 +48,11 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-        <li><a href="{{ route('categorias') }}">Categorias</a></li>
-          <li><a href="{{ route('cono') }}">¿Quienes somos?</a></li>
-          <li><a href="{{ route('cero') }}">Productos | Herramientas | Servicios</a></li>
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos |</a></li>
+          </li>
+          <li><a>|</a>
           <li><a href="{{ route('index') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
         </ul>
@@ -61,8 +63,8 @@
   <!-- Testimonios -->
   <section class="testimonios">
     <div class="testimonios-title">
-      <h2>TecnoSoportSDA</h2>
-      <h3>Servicios a Soporte tecnico</h3>
+      <h2>Papelitos</h2>
+      <h3>Papeleria ... Calidad y Precio </h3>
       <br>
 
       <br>
@@ -72,10 +74,7 @@
       <br>
       <p align="left" style="text-align:justify">
         Esta empresa fue creada por estudiantes que se encuentran estudiando en el ámbito del mundo digital
-        para poder facilitar la reparación y mantenimiento de equipos de cómputo,
-        contar con asesorías en caso de que el problema pudiera resolverse a distancia o/y
-        bien acudiendo al domicilio y poder resolverlo siempre y cuando podamos dirigir al usuario ofreciéndole las mejores opciones
-
+        para poder facilitar la venta de articulos de papeleria
       </p>
       <br>
       <br>
@@ -83,10 +82,10 @@
       <h4>Misión</h4><img src="assets/img/mision.png" width="200" height="200" align="left">
 
       <br>
-      <p align="left" style="text-align:justify">
-        Brindar servicios de soporte tecnico ,los cuales estaran dedicados a satisfacer,
-        sus nesecidades con la finalidad de que sus quipos tengan un alto rendimiento,
-        atravez de un adignostico y con la supervision que nuestro equipo le brinda.
+      <p align="left" style="text-align:justify">Somos una empresa ,
+         líder,reconocida, sólida, innovadora y profesional con una estructura organizacional
+          vanguardista que contribuye a la sociedad con valores, mejor servicio y más artículos, 
+          ampliando el mercado a nivel nacional.
       </p>
       <br>
       <br>
@@ -95,11 +94,9 @@
 
       <br>
       <p align="left" style="text-align:justify">
-        Ser una empresa reconocida a nivel estatal para seguir ,
-        brindando servicios de soporte técnico,
-        asistiendo o asesorándolo de la mejor manera,
-        con la finalidad de poder satisfacer las necesidades del cliente y así mismo brindarle una mejor experiencia.
-      </p>
+      Ser los mejores en venta y distribución de artículos de papelería y oficina en calidad y precio,
+       satisfaciendo las necesidades de nuestros clientes, accionistas, 
+       empleados y proveedores en territorio nacional.</p>
     </div>
     </div>
 

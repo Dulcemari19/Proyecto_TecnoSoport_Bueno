@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TecnosoporSDA</title>
+  <title>Papelitos</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -51,7 +51,7 @@
         <ul>
           <li><a href="{{ route('cono') }}">¿Quienes somos?</a></li>
           <li><a>Bienvenido(a)</a>
-          <li><a>|</a>
+          <li><a href="{{ route('paypal') }}">Pagar</a>
           <li><a href="{{ route('logout') }}">
                 <img src="assets/img/c1.png" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left">
               </svg></a></li>
@@ -68,17 +68,17 @@
     </div>
     <br>
     <center>
-    <h4><a href="{{ $juguetes->previousPageUrl() }}"> </a>
+    <h4><a href="{{ $articulos->previousPageUrl() }}"> </a>
     <img src="assets/img/f3.png" alt="" width="70" height="70" class="bi bi-box-arrow-left">
 
-    # {{ $juguetes->currentPage() }} Producto
-    <a href="{{ $juguetes->nextPageUrl() }}"><img src="assets/img/f4.png" alt="" width="70" height="70" class="bi bi-box-arrow-left"> </a></h4>
+    # {{ $articulos->currentPage() }} Producto
+    <a href="{{ $articulos->nextPageUrl() }}"><img src="assets/img/f4.png" alt="" width="70" height="70" class="bi bi-box-arrow-left"> </a></h4>
     </center>
     <br>
   
          <!-- ======= tabla de precios ======= -->
            
-@foreach($juguetes as $juguete) 
+@foreach($articulos as $articulo) 
 
 <div style="text-align:center;" style="margin-top: 50px;">
       <table class="table">
@@ -90,19 +90,19 @@
             <h3>Precio</h3>
           </th>
           <tr></tr>
-          <th scope="row"><img src="{{ asset('img/'.$juguete->img) }}" alt="{{$juguete->img}}" width="150" height="150"></th>
+          <th scope="row"><img src="{{ asset('img/'.$articulo->img) }}" alt="{{$articulo->img}}" width="150" height="150"></th>
           </th>
           <th>
-            <h1>$ {{ $juguete->pre }} MXN </h1>
+            <h1>$ {{ $articulo->pre }} MXN </h1>
 
             </tr>
           <th>
-            <h3>Nombre<h3> {{ $juguete->nombre }}</h1>
+            <h3>Nombre<h3> {{ $articulo->nombre }}</h1>
                 </h2>
           </th>
           <th>
             <div class="precio-col-comprar">
-              <a href="{{ route('detalle', ['id' => $juguete->id_juguete]) }}"><img src="assets/img/co1.png" alt="" width="60" height="60" class="bi bi-box-arrow-left"> Comprar</a>
+              <a href="{{ route('carrito', ['id' => $articulo->id_articulo]) }}"><img src="assets/img/co1.png" alt="" width="60" height="60" class="bi bi-box-arrow-left"> Comprar</a>
             </div>
             <h3>
           </th>

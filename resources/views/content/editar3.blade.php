@@ -38,21 +38,28 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+   <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><img src="{{ asset('assets/img/logo.png') }}" alt="" width="120" height="80"></h1>
+      <h1 class="logo"><img src="{{ asset('assets/img/logo.png') }}" alt="" width="60" height="60"></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('categorias') }}">Categorias |</a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar3') }}">articulos | </a></li>
+          <li><a href="{{ route('agregar3') }}">Registrar articulo | </a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes </a>
+          <li><a>|</a>
+          <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
-    </header><!-- End Header -->
-
+  </header><!-- End Header -->
  
   <!-- Testimonios -->
   <section class="testimonios">
@@ -64,20 +71,22 @@
      <br>
 
 <center>
-<form name="nuevo" action="{{ route('salvar3' ,['id'=>$producto->id_producto]) }}" method="POST" enctype='multipart/form-data'>
+<form name="nuevo" action="{{ route('salvar3' ,['id'=>$articulo->id_articulo]) }}" method="POST" enctype='multipart/form-data'>
         {{ csrf_field() }}
         {{ method_field('PUT') }}
 
         <input type='file' name='img1' placeholder="Imagen">
-        <input type='hidden' name='img2' value="{{ $producto->img }}">
+        <input type='hidden' name='img2' value="{{ $articulo->img }}">
         <br><br>
-        <input type='text' name='nombre' placeholder="Nombre" value="{{ $producto->nombre }}">
-        <input type='text' name='des' placeholder="Descripción" value="{{ $producto->des }}">
-        <input type='text' name='pre' placeholder="Presio" value="{{ $producto->pre }}">
-        <input type='text' name='tipo' placeholder="Tipo" value="{{ $producto->tipo }}"> 
-        <input type='text' name='categoria' placeholder="Categoria" value="{{ $producto->categoria }}">
+        <input type='text' name='nombre' placeholder="Nombre" value="{{ $articulo->nombre }}">
+        <input type='text' name='des' placeholder="Descripción" value="{{ $articulo->des }}">
+        <input type='text' name='pre' placeholder="Presio" value="{{ $articulo->pre }}">
+        <input type='text' name='tipo' placeholder="Tipo" value="{{ $articulo->tipo }}"> 
+        <input type='text' name='marca' placeholder="marca" value="{{ $articulo->marca }}">
+        <input type='text' name='categoria' placeholder="Categoria" value="{{ $articulo->categoria }}">
         <input type='submit' value="Guardar"><br>
         <br><br>
+        
     </form>
 </center>
 

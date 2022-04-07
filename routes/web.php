@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 //---------Index---------
@@ -32,6 +32,15 @@ Route::name('ta_usu')->get('ta_usu/', 'SistemController@ta_usu');
 Route::name('categorias')->get('categorias/', 'SistemController@categorias');
 Route::name('servicios')->get('servicios/', 'SistemController@servicios');
 Route::name('térmi')->get('térmi/', 'SistemController@térmi');
+Route::name('decoracion')->get('decoracion/', 'SistemController@decoracion');
+Route::name('calculadoras')->get('calculadoras/', 'SistemController@calculadoras');
+Route::name('colores')->get('colores/', 'SistemController@colores');
+Route::name('cuadernos')->get('cuadernos/', 'SistemController@cuadernos');
+Route::name('libreta')->get('libreta/', 'SistemController@libreta');
+Route::name('pinturas')->get('pinturas/', 'SistemController@pinturas');
+Route::name('plumones')->get('plumones/', 'SistemController@plumones');
+Route::name('sobres')->get('sobres/', 'SistemController@sobres');
+
 Route::get('/ver', 'SistemController@ver');
 Route::get('/pdf', 'SistemController@download')->name('pdf');
 
@@ -85,5 +94,7 @@ Route::name('borrar3')->delete('borrar3/{id}', 'LoginController@borrar3');
 Route::name('detalle')->get('detalle/{id}', 'LoginController@detalle');
 Route::name('nombre')->get('nombre/{id}', 'LoginController@nombre');
 
-/*Route::get('/paypal/pay', 'PaymentController@payWithPayPal');
-Route::get('/paypal/status', 'PaymentController@payPalStatus');*/
+Route::name('carrito')->get('carrito/{id}', 'SistemController@carrito');
+
+Route::name('paypal')->get('/paypal/pay/', 'PaymentController@payWithPayPal');
+Route::get('/paypal/status', 'PaymentController@payPalStatus');

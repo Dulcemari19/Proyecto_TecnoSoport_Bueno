@@ -48,9 +48,14 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="{{ route('mostrar') }}">Productos | Herramientas | Servicios</a></li>
-
-          <li><a href="{{ route('mostrar2') }}">Administradores</a></li>
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('categorias') }}">Categorias |</a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos | </a></li>
+          <li><a href="{{ route('agregar3') }}">Registrar producto | </a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes </a>
+          </li>
           <li><a>|</a>
           <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
@@ -65,10 +70,7 @@
       <h2>Administracion de productos <img src="{{ asset('assets/img/ti1.png') }}" alt="" width="80" height="80"></h2>
     </div>
     <br>
-    <br>
-
-    <center>
-      <form name="nuevo" action="{{ route('guardar4') }}" method="POST" enctype='multipart/form-data'>
+    <form name="nuevo" action="{{ route('guardar4') }}" method="POST" enctype='multipart/form-data'>
         {{ csrf_field() }}
 
         <input type='text' name='nombre' placeholder="Nombre">

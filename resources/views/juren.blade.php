@@ -49,9 +49,12 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
 
-          <li><a href="{{ route('mostrar') }}">Administrador de Usuarios</a></li>
-
-          <li><a href="{{ route('mostrar2') }}">Administradores</a></li>
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar') }}">Administrador de Usuarios |</a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('agregar3') }}">Registrar producto | </a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos </a></li>
           <li><a>|</a>
           <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
 
@@ -63,12 +66,11 @@
   <!-- Testimonios -->
   <section class="testimonios">
     <div class="testimonios-title">
-      <h2>Productos  <img src="{{ asset('assets/img/ti1.png') }}" alt="" width="80" height="80"></h2>
-      <a href="{{ route('pdf')}}"><img src="{{ asset('assets/img/pdf.png') }}" alt="" width="30" height="30" class="bi bi-box-arrow-left"></a>
+      <h2>Productos <img src="{{ asset('assets/img/ti1.png') }}" alt="" width="80" height="80"></h2>
 
     </div>
 
-    <center><button type="button"><a href="{{ route('agregar3') }}"><img src="{{ asset('assets/img/agregar-usuario.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td></button></center>
+    <center><button type="button"><a href="{{ route('agregar3') }}"></button><img src="{{ asset('assets/img/agregar-usuario.png') }}" alt="" width="45" height="45" class="bi bi-box-arrow-left"></a></center>
     <h1>
       <!--a href="{{ route('agregar3') }}"></a--->
     </h1>
@@ -110,19 +112,19 @@
           </tr>
 
           <tr>
-            @foreach($juguetes as $juguete)
-            <td>{{ $juguete->id_juguete }}</td>
-            <td><img src="{{ asset('img/'.$juguete->img) }}" alt="{{$juguete->img}}" width="80" height="70"></td>
-            <td>{{ $juguete->nombre  }}</td>
-            <td>{{ $juguete->des }}</td>
-            <td>$ {{ $juguete->pre }} MXN </td>
-            <td>{{ $juguete->tipo }}</td>
-            <td>{{ $juguete->marca }}</td>
-            <td>{{ $juguete->categoria }}</td>
-            <td><a href="{{ route('editar3', ['id' => $juguete->id_juguete]) }}"><img src="{{ asset('assets/img/boton-editar.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td>
-            
+            @foreach($articulos as $articulo)
+            <td>{{ $articulo->id_articulo }}</td>
+            <td><img src="{{ asset('img/'.$articulo->img) }}" alt="{{$articulo->img}}" width="80" height="70"></td>
+            <td>{{ $articulo->nombre  }}</td>
+            <td>{{ $articulo->des }}</td>
+            <td>$ {{ $articulo->pre }} MXN </td>
+            <td>{{ $articulo->tipo }}</td>
+            <td>{{ $articulo->marca }}</td>
+            <td>{{ $articulo->categoria }}</td>
+            <td><a href="{{ route('editar3', ['id' => $articulo->id_articulo]) }}"><img src="{{ asset('assets/img/boton-editar.png') }}" alt="" width="60" height="60" class="bi bi-box-arrow-left"></a></td>
+
             <td>
-              <form action="{{ route('borrar3', ['id' => $juguete->id_juguete]) }}" method="POST" name="borrar">
+              <form action="{{ route('borrar3', ['id' => $articulo->id_articulo]) }}" method="POST" name="borrar">
                 {{csrf_field()}}
                 {{method_field('DELETE')}}
                 <input type="submit" value="Borrar">

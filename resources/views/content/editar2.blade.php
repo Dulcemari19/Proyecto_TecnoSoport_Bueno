@@ -38,21 +38,29 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+ 
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><img src="{{ asset('assets/img/logo.png') }}" alt="" width="120" height="80"></h1>
+      <h1 class="logo"><img src="{{ asset('assets/img/logo.png') }}" alt="" width="60" height="60"></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          
+          <li><a href="{{ route('admi') }}">inicio | </a></li>
+          <li><a href="{{ route('categorias') }}">Categorias |</a></li>
+          <li><a href="{{ route('cono') }}">¿Quienes somos? |</a></li>
+          <li><a href="{{ route('mostrar3') }}">Productos | </a></li>
+          <li><a href="{{ route('agregar3') }}">Registrar producto | </a></li>
+          <li><a href="{{ route('mostrar2') }}">Administradores |</a></li>
+          <li><a href="{{ route('mostrar') }}">Clientes </a>
+          <li><a>|</a>
+          <li><a href="{{ route('logoutad') }}"><img src="{{ asset('assets/img/c1.png ') }}" alt="" width="30" height="30" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-box-arrow-left"></a></li>
+
         </ul>
       </nav><!-- .nav-menu -->
-    </header><!-- End Header -->
-
+  </header><!-- End Header -->
  
   <!-- Testimonios -->
   <section class="testimonios">
@@ -61,11 +69,6 @@
      <hr>
     </div>
     <br>
-     <br>
-
-
-
-
 
 <center>
     <form name="nuevo" action="{{ route('salvar2', ['id' => $ad->id_admi]) }}" method="POST">
